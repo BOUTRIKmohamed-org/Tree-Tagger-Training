@@ -25,8 +25,8 @@
         * the tags of one token must be different for example : <br>:no_entry_sign: being   be VBG   being NN1   be NN1 <br>
         :white_check_mark: being be VBG being NN1
      * **lexicon_formatter.py**<br>
-     Ce script va juste enlever des caractères qui ont étés ajoutés lors de l'utilisation de la fonction ro_csv du package pandas comme **"** . c'est un script qui manipule le fichier de lexicon en brut.
-       
+     This script will simply remove characters that were added when using the to_csv function from the pandas package, such as **"** It is a script that manipulates the lexicon file in a low-level way..
+
 ## DAG of the pipeline
 ```mermaid
 graph TD;
