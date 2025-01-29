@@ -3,3 +3,13 @@
 TreeTagger/*
 Buchanan.tt
 task1
+train_data/Texts/*
+train_data/lexicon_scripts/*
+train_data/*.txt
+train_data/*.tt
+annotated_test_data/*
+best_params
+grid_search*
+macro_precision.txt
+*.log
+tra
