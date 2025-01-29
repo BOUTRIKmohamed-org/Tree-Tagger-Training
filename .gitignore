@@ -1,5 +1,4 @@
 .venv/*
-*.txt
 TreeTagger/*
 Buchanan.tt
 task1
@@ -12,4 +11,5 @@ best_params
 grid_search*
 macro_precision.txt
 *.log
-tra
+train_data/train_dataset/mixed*
+train_data/train_dataset/real_tags.txt
