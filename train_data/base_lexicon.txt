@@ -1,0 +1,8 @@
+that	that	PNQ
+that	that	CJT
+that	that	DT0
+that	that	AV0
+That	that	DT0
+.	.	SENT
+!	!	SENT
+?	?	SENT
