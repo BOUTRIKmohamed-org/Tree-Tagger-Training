@@ -61,11 +61,12 @@ graph TD;
 # Prerequisites
 
 1. Install the packages using pip : pip install requirements.txt
-2. Install the files for the lexicon from the link : https://llds.ling-phil.ox.ac.uk/llds/xmlui/handle/20.500.14106/2554
-3. move folder 2554/download/Texts/ in ./train_data/
-4. move the script 2554/download/XML/Scripts/oneWordPerLine.xsl in train_data/lexicon_scripts/
-5. TreeTagger must be installed and put in the same folder as the pipelines.
-6. a train dataset is provided.
+2. Install xsltproc using command : sudo apt install xsltproc (on linux or windows WSL)
+4. Install the files for the lexicon from the link : https://llds.ling-phil.ox.ac.uk/llds/xmlui/handle/20.500.14106/2554
+5. move folder 2554/download/Texts/ in ./train_data/
+6. move the script 2554/download/XML/Scripts/oneWordPerLine.xsl in train_data/lexicon_scripts/
+7. TreeTagger must be installed in the same folder as the pipelines :rotating_light: once the folder of TreeTagger is installed. Move it to the same folder as the pipelines. Then, install the tagging scripts. Finally launch the installer in the same folder *./train_data/TreeTagger/* so it can fix the paths. :rotating_light:.
+8. a train dataset is provided.
    
 # Examples : 
  *  ./train_pipeline.sh -nb_sen 100 -nb_lexicon 3 -cl 2 -dtg 0.7 -sw 1 -ecw 0.5 -stg 1 -ptg 1 -lt 0
