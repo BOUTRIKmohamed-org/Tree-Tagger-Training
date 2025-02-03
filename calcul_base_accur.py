@@ -25,24 +25,24 @@ for cat in that_cats:
          true = len(df[(df["token"] == "that") & (df["tag"] == "PNQ")])
          pronoun_accuracy = true/len(df[(df["token"] == "that")])
          macro_accuracy +=pronoun_accuracy
-         print(f"the accuracy of relative that after training the model is : {true}/{len(df[(df["token"] == "that")])} = {pronoun_accuracy:.2f}")
+         print(f"the accuracy of relative that after training the model is : {true}/{len(df[(df['token'] == 'that')])} = {pronoun_accuracy:.2f}")
       case "conjunction":
          true = len(df[(df["token"] == "that") & (df["tag"] == "CJT")])
          cjt_accuracy = true/len(df[(df["token"] == "that")])
          macro_accuracy +=cjt_accuracy
-         print(f"the accuracy of conjunction that after training the model is : {true}/{len(df[(df["token"] == "that")])} = {cjt_accuracy:.2f}")
+         print(f"the accuracy of conjunction that after training the model is : {true}/{len(df[(df['token'] == 'that')])} = {cjt_accuracy:.2f}")
       
       case "determiner":
          true = len(df[(df["token"] == "that") & (df["tag"] == "DT0")])
          det_accuracy = true/len(df[(df["token"] == "that")])
          macro_accuracy +=det_accuracy
-         print(f"the accuracy of determiner that after training the model is : {true}/{len(df[(df["token"] == "that")])} = {det_accuracy:.2f}")
+         print(f"the accuracy of determiner that after training the model is : {true}/{len(df[(df['token'] == 'that')])} = {det_accuracy:.2f}")
       
       case "adv":
          true = len(df[(df["token"] == "that") & (df["tag"] == "AV0")])
          adv_accuracy = true/len(df[(df["token"] == "that")])
          macro_accuracy +=adv_accuracy
-         print(f"the accuracy of adverb that after training the model is : {true}/{len(df[(df["token"] == "that")])} = {adv_accuracy:.2f}")
+         print(f"the accuracy of adverb that after training the model is : {true}/{len(df[(df['token'] == 'that')])} = {adv_accuracy:.2f}")
 
 print(f"The macro accuracy is : {macro_accuracy/len(that_cats):.3f}")
 #with open("macro_accuracy.txt", "a") as file:
