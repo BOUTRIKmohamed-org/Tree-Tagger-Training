@@ -33,8 +33,8 @@ graph TD;
    A[Randomize the train dataset] --> B[Annotate the randomized dataset];
    B[Annotate the randomized dataset] --> C[fix the POS tags of that tokens];
    C[fix the POS tags of that tokens] --> E[Create the corpus];
-   E[Create the corpus] --> F[Format the corpus];
-   F[Format the corpus] --> G[Train the TreeTagger];
+   E[Create the lexicon from BNC corpus] --> F[Format the lexicon];
+   F[Format the lexicon] --> G[Train the TreeTagger];
    G[Train the TreeTagger] --> H[Moving the parameter file in the library of TreeTagger]
     
 ```
